@@ -1,0 +1,83 @@
+@model IEnumerable<News>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+ 
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PicUrl)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Categories)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DatePosted)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Content)
+        </th>
+
+        @{
+            System.Diagnostics.Debug.Assert(User.Identity != null, "User.Identity != null");
+        }
+        @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+        { <th> Actions</th>
+        }
+     </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td class="align-middle">
+                <img class="rounded-circle" src="@item.PicUrl" alt="@item.Name" style="max-width: 150px"/>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Categories)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatePosted)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Content)
+            </td>
+            @if (User.Identity != null && User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+            {
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+             }
+
+            
+        </tr>
+    }
+    </tbody>
+</table>
+
+ @if (User.Identity != null && User.Identity.IsAuthenticated && User.IsInRole("Admin")) 
+            {
+                <div style="position: center; right: 25px; bottom: 25px;" class="text-white">
+                    <a asp-controller="News" asp-action="Create" class="btn btn-success"> 
+                        <i class="bi bi-plus-circle"></i> Add New </a>
+                </div>
+             }
