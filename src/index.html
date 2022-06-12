@@ -1,65 +1,539 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Home Page - News</title>
-    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/site.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="BreezyCV - Resume / CV / vCard Template" />
+  <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio" />
+  <meta name="author" content="lmpixels" />
+  <link rel="shortcut icon" href="favicon.ico">
+
+
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+  <link rel="stylesheet" href="css/animations.css" type="text/css">
+  <link rel="stylesheet" href="css/perfect-scrollbar.css" type="text/css">
+  <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+  <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
+
 <body>
-<header>
+<!-- Animated Background -->
+<div class="lm-animated-bg" style="background-image: url(img/main_bg.png);"></div>
+<!-- /Animated Background -->
 
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <div class="container">
-            <a class="navbar-brand" href="/">Home</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="News.html">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="Authors.html">Authors</a>
-                    </li>
-                </ul>
+<!-- Loading animation -->
+<div class="preloader">
+  <div class="preloader-animation">
+    <div class="preloader-spinner">
+    </div>
+  </div>
+</div>
+<!-- /Loading animation -->
 
+<div class="page">
+  <div class="page-content">
 
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" id="register" href="/Identity/Account/Register">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" id="login" href="/Identity/Account/Login">Login</a>
-                    </li>
-                </ul>
+    <header id="site_header" class="header mobile-menu-hide">
+      <div class="header-content">
+        <div class="header-photo">
+          <img src="https://i.ibb.co/T8fTJ7M/Ads-z.png" alt="Rovshan Huseynov">
+        </div>
+        <div class="header-titles">
+          <h2>Rovshan Huseynov</h2>
+          <h4>Back-End Developer</h4>
+        </div>
+      </div>
 
+      <ul class="main-menu">
+        <li class="active">
+          <a href="#home" class="nav-anim">
+            <span class="menu-icon lnr lnr-home"></span>
+            <span class="link-text">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#about-me" class="nav-anim">
+            <span class="menu-icon lnr lnr-user"></span>
+            <span class="link-text">About Me</span>
+          </a>
+        </li>
+        <li>
+          <a href="#resume" class="nav-anim">
+            <span class="menu-icon lnr lnr-graduation-hat"></span>
+            <span class="link-text">Resume</span>
+          </a>
+        </li>
+ 
+        <li>
+          <a href="#contact" class="nav-anim">
+            <span class="menu-icon lnr lnr-envelope"></span>
+            <span class="link-text">Contact</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="social-links">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/rovshan-huseynov-117a49192/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://www.facebook.com/rovshan.huseynov.12" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+         </ul>
+      </div>
+ 
+     </header>
+
+    <!-- Mobile Navigation -->
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <!-- End Mobile Navigation -->
+
+    <!-- Arrows Nav -->
+    <div class="lmpixels-arrows-nav">
+      <div class="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
+      <div class="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
+    </div>
+    <!-- End Arrows Nav -->
+
+    <div class="content-area">
+      <div class="animated-sections">
+        <!-- Home Subpage -->
+        <section data-id="home" class="animated-section start-page">
+          <div class="section-content vcentered">
+
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="title-block">
+                  <h2>Rovshan Huseynov</h2>
+                  <div class="owl-carousel text-rotation">
+                    <div class="item">
+                      <div class="sp-subtitle">Web Developer</div>
+                    </div>
+
+                    <div class="item">
+                      <div class="sp-subtitle">Back-End developer</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-    </nav>
+
+          </div>
+        </section>
+        <!-- End of Home Subpage -->
+
+        <!-- About Me Subpage -->
+        <section data-id="about-me" class="animated-section">
+          <div class="section-content">
+            <div class="page-title">
+              <h2>About <span>Me</span></h2>
+            </div>
+
+            <!-- Personal Information -->
+            <div class="row">
+              <div class="col-xs-12 col-sm-7">
+                <p>  I have experience in programming in C# and using ASP.NET MVC, as well as web development. I am interested in working in a collaborative environment where I can use my skills and learn new technologies.</p>
+              </div>
+
+              <div class="col-xs-12 col-sm-5">
+                <div class="info-list">
+                  <ul>
+                    <li>
+                      <span class="title">Age</span>
+                      <span class="value">25</span>
+                    </li>
+
+                    <li>
+                      <span class="title">Residence</span>
+                      <span class="value">Azerbaijan</span>
+                    </li>
+
+                    <li>
+                      <span class="title">Address</span>
+                      <span class="value">Baku</span>
+                    </li>
+
+                    <li>
+                      <span class="title">e-mail</span>
+                      <span class="value">rovshanhd@gmail.com</span>
+                    </li>
+
+                    <li>
+                      <span class="title">Phone</span>
+                      <span class="value">+994 70 834 1138</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- End of Personal Information -->
+
+            <div class="white-space-50"></div>
+
+            <!-- Services -->
+            <div class="row">
+              <div class="col-xs-12 col-sm-12">
+                <div class="block-title">
+                  <h3>What <span>I Do</span></h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="col-inner">
+                  <div class="info-list-w-icon">
+                    <div class="info-block-w-icon">
+                      <div class="ci-icon">
+                        <i class="lnr lnr-store"></i>
+                      </div>
+                      <div class="ci-text">
+                        <h4>Ecommerce</h4>
+                       </div>
+                    </div>
+                    <div class="info-block-w-icon">
+                      <div class="ci-icon">
+                        <i class="lnr lnr-laptop-phone"></i>
+                      </div><div class="ci-text">
+                      <h4>Web Design</h4>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <div class="col-inner">
+                  <div class="info-list-w-icon">
+                    <div class="info-block-w-icon">
+                      <div class="ci-icon">
+                        <i class="lnr lnr-pencil"></i>
+                      </div>
+                     
+                    </div>
+                    <div class="info-block-w-icon">
+                      <div class="ci-icon">
+                        <i class="lnr lnr-flag"></i>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of Services -->
+ 
+
+            
+          </div>
+        </section>
+        <!-- End of About Me Subpage -->
+
+        <!-- Resume Subpage -->
+        <section data-id="resume" class="animated-section">
+          <div class="section-content">
+            <div class="page-title">
+              <h2>Resume</h2>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-7">
+
+                <div class="block-title">
+                  <h3>Education</h3>
+                </div>
+
+                <div class="timeline timeline-second-style clearfix">
+                  <div class="timeline-item clearfix">
+                    <div class="left-part">
+                      <h5 class="item-period">2022</h5>
+                      <span class="item-company">Azerbaijan Technical University </span>
+                    </div>
+                   </div>
+                </div>
+
+                <div class="white-space-50"></div>
+
+                <div class="block-title">
+                  <h3>Experience</h3>
+                </div>
+
+                <div class="timeline timeline-second-style clearfix">
+                  <div class="timeline-item clearfix">
+                    <div class="left-part">
+                      <h5 class="item-period">2019 - 2020</h5>
+                      <span class="item-company">Institute of Biophysics, Azerbaijan Academy of Science</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="right-part">
+                      <h4 class="item-title">
+                        Junior IT Specialist</h4>
+                     </div>
+                  </div>
+
+                  <div class="timeline-item clearfix">
+                    <div class="left-part">
+                      <h5 class="item-period">2022 - 2022</h5>
+                      <span class="item-company">C# Back-End  </span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="right-part">
+                      <h4 class="item-title">Back-end developer C# training course. </h4>
+                      <p> The "e-tickets commercial" project was completed within a three-month course. C#, MS SQL, and MVC were all studied and practiced together. </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Skills & Certificates -->
+              <div class="col-xs-12 col-sm-5">
+
+                <div class="white-space-10"></div>
+
+                <!-- Coding Skills -->
+                <div class="block-title">
+                  <h3> <span>Skills</span></h3>
+                </div>
+
+                <div class="skills-info skills-second-style">
+                  <!-- Skill 5 -->
+                  <div class="skill clearfix">
+                    <h4>C#</h4>
+                    <div class="skill-value">80%</div>
+                  </div>
+                  <div class="skill-container skill-5">
+                    <div class="skill-percentage"></div>
+                  </div>
+                  <!-- End of Skill 5 -->
+
+                  <!-- Skill 6 -->
+                  <div class="skill clearfix">
+                    <h4>SQL</h4>
+                    <div class="skill-value">85%</div>
+                  </div>
+                  <div class="skill-container skill-6">
+                    <div class="skill-percentage"></div>
+                  </div>
+                  <!-- End of Skill 6 -->
+
+                  <!-- Skill 7 -->
+                  <div class="skill clearfix">
+                    <h4>MVC</h4>
+                    <div class="skill-value">80%</div>
+                  </div>
+                  <div class="skill-container skill-7">
+                    <div class="skill-percentage"></div>
+                  </div>
+                  <!-- End of Skill 7 -->
+                  <div class="skill clearfix">
+                    <h4>HTML/CSS</h4>
+                    <div class="skill-value">80%</div>
+                  </div>
+                  <div class="skill-container skill-7">
+                    <div class="skill-percentage"></div>
+                  </div>
+                  <div class="skill clearfix">
+                    <h4>Linux</h4>
+                    <div class="skill-value">70%</div>
+                  </div>
+                  <div class="skill-container skill-7">
+                    <div class="skill-percentage"></div>
+                  </div>
+                  
+                 </div>
+                <!-- End of Coding Skills -->
+
+                <div class="white-space-10"></div>
+
+                <!-- Knowledges -->
+                
+
+                <ul class="knowledges">
+                  <li>MVC</li>
+                  <li>SQL</li>
+                  <li>Web development</li>
+                  <li>C#</li>
+                  <li>Git</li>
+                  <li>HTML</li>
+                  <li>.NET</li>
+                  <li>OOP</li>
+                  <li>ASP.NET Core</li>
+                </ul>
+                <!-- End of Knowledges -->
+              </div>
+              <!-- End of Skills & Certificates -->
+            </div>
+
+            <div class="white-space-50"></div>
+
+            <!-- Certificates -->
+            <div class="row">
+              <div class="col-xs-12 col-sm-12">
+                <div class="block-title">
+                  <h3>Certificates</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <!-- Certificate 1 -->
+              <div class="col-xs-12 col-sm-6">
+                <div class="certificate-item clearfix">
+                  <div class="certi-logo">
+                    <img src="https://images.credly.com/size/340x340/images/0f467dff-9212-4684-9f74-44da8879e625/MTA-Introduction_to_Programming_Using_Python.png" alt="logo">
+                  </div>
+
+                  <div class="certi-content">
+                    <div class="certi-title">
+                      <h4>MTA: Introduction to Programming Using Python</h4>
+                    </div>
+                    <div class="certi-id">
+                      <span>Membership ID: Rovshan Huseynov</span>
+                    </div>
+                    <div class="certi-date">
+                      <span>February 06, 2020</span>
+                    </div>
+                    <div class="certi-company">
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of Certificates -->
+          </div>
+        </section>
+        <!-- End of Resume Subpage -->
+ 
+
+      
+
+        <!-- Contact Subpage -->
+        <section data-id="contact" class="animated-section">
+          <div class="section-content">
+            <div class="page-title">
+              <h2>Contact</h2>
+            </div>
+
+            <div class="row">
+              <!-- Contact Info -->
+              <div class="col-xs-12 col-sm-4">
+                <div class="lm-info-block gray-default">
+                  <i class="lnr lnr-map-marker"></i>
+                  <h4>Azerbaijan</h4>
+                  <span class="lm-info-block-value"></span>
+                  <span class="lm-info-block-text"></span>
+                </div>
+
+                <div class="lm-info-block gray-default">
+                  <i class="lnr lnr-phone-handset"></i>
+                  <h4>+994708341138</h4>
+                  <span class="lm-info-block-value"></span>
+                  <span class="lm-info-block-text"></span>
+                </div>
+
+                <div class="lm-info-block gray-default">
+                  <i class="lnr lnr-envelope"></i>
+                  <h4>rovshanhd@gmail.com</h4>
+                  <span class="lm-info-block-value"></span>
+                  <span class="lm-info-block-text"></span>
+                </div>
+
+                <div class="lm-info-block gray-default">
+                  <i class="lnr lnr-checkmark-circle"></i>
+                  <h4>Freelance Available</h4>
+                  <span class="lm-info-block-value"></span>
+                  <span class="lm-info-block-text"></span>
+                </div>
 
 
-</header>
-<div class="container">
-    <main role="main" class="pb-3">
+              </div>
+              <!-- End of Contact Info -->
 
-        <div class="text-center">
-            <h1 class="display-4">Welcome! </h1>
-        </div>
-    </main>
+              <!-- Contact Form -->
+              <div class="col-xs-12 col-sm-8">
+                <div id="map" class="map"></div>
+                <div class="block-title">
+                  <h3>How Can I <span>Help You?</span></h3>
+                </div>
+
+                <form id="contact_form" class="contact-form" action="contact_form/contact_form.php" method="post">
+
+                  <div class="messages"></div>
+
+                  <div class="controls two-columns">
+                    <div class="fields clearfix">
+                      <div class="left-column">
+                        <div class="form-group form-group-with-icon">
+                          <input id="form_name" type="text" name="name" class="form-control" placeholder="" required="required" data-error="Name is required.">
+                          <label>Full Name</label>
+                          <div class="form-control-border"></div>
+                          <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group form-group-with-icon">
+                          <input id="form_email" type="email" name="email" class="form-control" placeholder="" required="required" data-error="Valid email is required.">
+                          <label>Email Address</label>
+                          <div class="form-control-border"></div>
+                          <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group form-group-with-icon">
+                          <input id="form_subject" type="text" name="subject" class="form-control" placeholder="" required="required" data-error="Subject is required.">
+                          <label>Subject</label>
+                          <div class="form-control-border"></div>
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="right-column">
+                        <div class="form-group form-group-with-icon">
+                          <textarea id="form_message" name="message" class="form-control" placeholder="" rows="7" required="required" data-error="Please, leave me a message."></textarea>
+                          <label>Message</label>
+                          <div class="form-control-border"></div>
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI" data-theme="dark"></div>
+
+                    <input type="submit" class="button btn-send" value="Send message">
+                  </div>
+                </form>
+              </div>
+              <!-- End of Contact Form -->
+            </div>
+
+          </div>
+        </section>
+        <!-- End of Contact Subpage -->
+      </div>
+    </div>
+
+  </div>
 </div>
 
-<footer class="border-top footer text-muted">
-    <div class="container">
-        &copy; 2022 - News - <a href="/Home/Privacy">Privacy</a>
-    </div>
-</footer>
-<script src="/lib/jquery/dist/jquery.min.js"></script>
-<script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/animating.js"></script>
 
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+<script src='js/perfect-scrollbar.min.js'></script>
+<script src='js/jquery.shuffle.min.js'></script>
+<script src='js/masonry.pkgd.min.js'></script>
+<script src='js/owl.carousel.min.js'></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
+<script src="js/jquery.googlemap.js"></script>
+<script src="js/validator.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
